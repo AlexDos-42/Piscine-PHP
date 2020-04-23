@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="scumm.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        
+        <title>Day of the 42</title>
+        
+        <style>
+        body {
+            background-color: #505050;
+        }
+        </style>
+        
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="header">
+                <img id="logo" src="resources/day_of_the_42.png">
+                <img id="loupe" src="resources/loupe.png">
+                <a href="https://www.disney.com">
+                <img id="reload"src="resources/reload.png" alt="Recommencer au début">
+                </a>
+                <a href="https://www.relaischateaux.com/">
+                <img id="close" alt="Déconnecter" src="resources/close.gif">
+                    </a>
+            </div>
+            
+            <div class="nav">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <img id="arrow" alt="Avancer" src="resources/arrow.png">   
+                    </li>
+                    <li>
+                        <img id="main" alt="Prendre" src="resources/main.png">
+                    </li>
+                    <li id="bord">
+                        <img id="oeil" alt="Regarder" src="resources/oeil.png">
+                    </li>
+                    <li>
+                        <img id="outil" alt="Utiliser" src="resources/outil.png">
+                    </li>
+                    <li>
+                        <img id="chat" alt="Parler" src="resources/chat-icon.png">
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Flexbox container for aligning the toasts -->
+            <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="min-height: 200px;">
+
+              <!-- Then put toasts within -->
+              <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+                <div class="toast-header">
+                  <strong class="mr-auto">Bootstrap</strong>
+                  <small>11 mins ago</small>
+                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            </div>
+            
+            <div class="article">
+                <a href="#" data-toggle="tooltip" title="Une chaise !">
+                <div class="ikea"></div></a>
+                <a href="#" data-toggle="tooltip" title="Un mac !">
+                <div class="apple"></div>
+                </a>
+                <img id="cluster" alt="cluster" src="resources/cluster.jpg">
+            </div>
+            <div class="navr">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <img id="book" alt="book" src="resources/book.png">   
+                    </li>
+                    <li>
+                        
+                        <img id="towel" alt="towel" data-toggle="modal" data-target="#myModal" src="resources/towel.png">
+                    </li>
+                    <li id="brique">
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+            
+                        <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">"Lavez-vous" crie Charly au micro</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Vous prenez votre serviete et faites un rapide aller-retour vers la salle de bain.
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="footer">
+                <p>Vous <span class="entrez">écoutez</span> vos objectifs pour réussir la piscine....</p>
+                <p class="italic">- C'est affreux, on vient de perdre
+                    <button type="button" class="btn btn-link" data-container="body" data-toggle="popover" data-placement="top" data-content="C'est un chat">
+                        Norminet
+                    </button>
+                    , celui qui le trouve aura une place à 42.</p>
+                   <a href="Gameover.html"><p>"Je suis alergique aux chats"</p></a>
+                <hr style="margin: 5px 0 0 0;padding 0;">
+                    <a href="depart.html"><p style="margin-top: 0px; padding 0;">"Minou minou"</p></a>
+                </div>
+        </div>
+        
+        <script>
+        $(document).ready(function(){
+          $('.toast').toast('show');
+        });
+        </script>
+        <script>
+        $(function () {
+          $('[data-toggle="popover"]').popover()
+        })
+        </script>
+        
+    </body>
+</html>
