@@ -1,6 +1,9 @@
 #!/usr/bin/php
 <?php
-	$str = trim($$argv[1]);
-	$str = preg_replace('/\s\s+/', ' ', $str);
+if ($argc == 2)
+{
+	$str = trim($argv[1]);
+	$str = preg_replace('/\ +/', ' ', $str);
 	echo "$str\n";
+}
 ?>
