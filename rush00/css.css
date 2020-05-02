@@ -1,0 +1,60 @@
+html, body, .cover {
+    height: 90%;  
+}
+
+@font-face {
+	font-family: Neilvard;
+	src: url('font/NeilvardOne.ttf');
+}
+
+nav.top {
+    height: 120px;
+    background: rgba(9, 65, 122, 0.8);
+}
+
+div.container {
+     display: table;
+     width: 100%;
+}
+
+h1 {
+    position: relative;
+    top: 30px;
+    font-family: Neilvard;
+    text-align: center;
+    background: rgba(9, 65, 122, 1);
+    padding: 20px;
+    color: red;
+    border: solid;
+}
+div.navbar-header a{
+    margin: auto;
+}
+
+div.login {
+    position: absolute;
+    right: 10px;
+    text-align: right;
+}
+div.name {
+    position: absolute;
+    left: 10px;
+}
+div.name a {
+    color: white;
+}
+
+
+div.login a {
+    color: white;
+}
+
+footer div{
+    height: 30px;
+    background: rgba(9, 65, 122, 0.8);
+}
+
+footer div a, footer div div {
+    color: white;
+    background-color: transparent;
+}

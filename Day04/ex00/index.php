@@ -1,5 +1,6 @@
 
 <?php
+include('install.php');
 session_start();
 if (isset($_GET['login']) && isset($_GET['passwd']) && $_GET['submit'] === 'OK'){
 	$_SESSION['login'] = $_GET['login'];
